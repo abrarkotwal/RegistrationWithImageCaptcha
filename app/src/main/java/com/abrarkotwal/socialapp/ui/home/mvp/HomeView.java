@@ -1,6 +1,7 @@
 package com.abrarkotwal.socialapp.ui.home.mvp;
 
 import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -41,7 +42,7 @@ public class HomeView {
         adapter = new ImageAdapter();
 
         subcategoryRecyclerview.setAdapter(adapter);
-        subcategoryRecyclerview.setLayoutManager(new LinearLayoutManager(context));
+        subcategoryRecyclerview.setLayoutManager(new GridLayoutManager(context,2));
         subcategoryRecyclerview.setHasFixedSize(true);
         subcategoryRecyclerview.setItemAnimator(new DefaultItemAnimator());
 
