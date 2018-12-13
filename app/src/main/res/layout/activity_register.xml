@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisterationActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:textStyle="bold"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Name"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text"
+        android:id="@+id/etName"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email/UserName"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text"
+        android:id="@+id/etEmail"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text"
+        android:id="@+id/etPassword"
+        android:inputType="textPassword"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Mobile Number"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text"
+        android:id="@+id/etMobile"
+        android:maxLength="10"
+        android:inputType="phone"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/captchaImage"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_refresh"
+            android:id="@+id/btnRefreshCaptha"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter captcha Text"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text"
+        android:id="@+id/etCaptchaText"
+        android:inputType="textPersonName"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:id="@+id/btnRegister"
+        android:textSize="@dimen/text"
+        android:textColor="@color/text"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
